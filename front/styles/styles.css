@@ -1,0 +1,145 @@
+:root {
+  --kanit: "Kanit", sans-serif;
+  --roboto: "Roboto", sans-serif;
+
+  --green: #6d9901;
+  --sky-blue: #0b87bc;
+  --black: #252829;
+  --black-dark: #141516;
+  --black-light: #303536;
+  --gray: #424243;
+  --white: #f1f3eb;
+  --violet-gray: #decfe5;
+
+  --padding-container: 2.5rem 0;
+}
+
+body {
+  font-family: var(--roboto);
+  background-color: var(--black);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--padding-container);
+  overflow: hidden;
+}
+
+.highlight__sky {
+  color: var(--sky-blue);
+}
+.imagen {
+  width: 100%;
+  display: block;
+}
+
+.menu {
+  background-color: var(--black-dark);
+  color: var(--white);
+  height: 4.5rem;
+}
+
+.menu__container {
+  --pading--container: 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.menu__logo {
+  width: 40%;
+  max-width: 130px;
+}
+
+.menu__links {
+  display: flex;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__link {
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  font-family: var(--kanit);
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.menu__link:hover {
+  border-radius: 0.3rem;
+  background-color: var(--sky-blue);
+}
+
+.cabecera {
+  background-image: url("../assets/fondo_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cabecera__container {
+  margin-bottom: 4rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cabecera_title {
+  font-family: var(--kanit);
+  color: var(--white);
+  font-size: 2.5rem;
+}
+
+#peliculas__container {
+  --padding-container: 0rem 0;
+  width: auto;
+  font-size: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 22%);
+  justify-content: space-between;
+  align-content: center;
+  row-gap: 4rem;
+}
+
+.peliculas__card {
+  width: 100%;
+  height: 32.5rem;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  background-color: var(--black-dark);
+  font-size: 1.2rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.peliculas__card__img {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 20rem;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  object-fit: cover;
+  display: block;
+}
+
+.peliculas__card__title {
+  font-family: var(--kanit);
+  font-size: 1.1rem;
+  color: var(--green);
+}
+
+.peliculas__card__subtitle {
+  font-family: var(--roboto);
+  font-size: 0.95rem;
+}
+
+.peliculas__card__text {
+  font-family: var(--roboto);
+  font-size: 0.95rem;
+}
