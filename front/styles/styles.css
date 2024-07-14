@@ -107,9 +107,15 @@ body {
   row-gap: 4rem;
 }
 
+#container__error {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
 .peliculas__card {
   width: 100%;
-  height: 32.5rem;
+  height: 30.5rem;
   padding: 1.2rem;
   border-radius: 0.8rem;
   background-color: var(--black-dark);
