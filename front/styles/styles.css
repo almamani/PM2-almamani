@@ -1,3 +1,5 @@
+/*----------- Estilos Generales ----------*/
+
 :root {
   --kanit: "Kanit", sans-serif;
   --roboto: "Roboto", sans-serif;
@@ -9,27 +11,37 @@
   --black-light: #303536;
   --gray: #424243;
   --white: #f1f3eb;
-  --violet-gray: #decfe5;
 
-  --padding-container: 2.5rem 0;
+  --padding-contenedor: 2.5rem 0;
 }
 
 body {
-  font-family: var(--roboto);
   background-color: var(--black);
+  font-family: var(--roboto);
+  color: var(--white);
 }
 
-.container {
+.contenedor {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: var(--padding-container);
+  padding: var(--padding-contenedor);
   overflow: hidden;
+}
+
+.highlight {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .highlight__sky {
   color: var(--sky-blue);
 }
+
+.highlight__green {
+  color: var(--green);
+}
+
 .imagen {
   width: 100%;
   display: block;
@@ -41,8 +53,8 @@ body {
   height: 4.5rem;
 }
 
-.menu__container {
-  --pading--container: 0 0;
+.menu__contenedor {
+  --pading--contenedor: 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,8 +83,7 @@ body {
 }
 
 .menu__link:hover {
-  border-radius: 0.3rem;
-  background-color: var(--sky-blue);
+  color: var(--sky-blue);
 }
 
 .cabecera {
@@ -82,8 +93,8 @@ body {
   background-position: center;
 }
 
-.cabecera__container {
-  margin-bottom: 4rem;
+.cabecera__contenedor {
+  margin-bottom: 2rem;
   height: 1rem;
   display: flex;
   justify-content: center;
@@ -93,11 +104,39 @@ body {
 .cabecera_title {
   font-family: var(--kanit);
   color: var(--white);
+  font-size: 3.2rem;
+}
+
+.area__title {
+  margin-bottom: 4rem;
+}
+
+.area__title__text {
+  margin-bottom: 0.5rem;
   font-size: 2.5rem;
 }
 
-#peliculas__container {
-  --padding-container: 0rem 0;
+.area__title__picture {
+  width: 6%;
+}
+
+.area__subtitle {
+  margin-bottom: 1rem;
+}
+
+.area__subtitle__text {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.area__subtitle__picture {
+  width: 8%;
+}
+
+/*----------- Estilos Index ----------*/
+
+#peliculas__contenedor {
+  --padding-contenedor: 0rem 0;
   width: auto;
   font-size: 1.3rem;
   display: grid;
@@ -105,12 +144,6 @@ body {
   justify-content: space-between;
   align-content: center;
   row-gap: 4rem;
-}
-
-#container__error {
-  text-align: center;
-  font-size: 1.4rem;
-  color: var(--white);
 }
 
 .peliculas__card {
@@ -148,4 +181,75 @@ body {
 .peliculas__card__text {
   font-family: var(--roboto);
   font-size: 0.95rem;
+}
+
+/*----------- Estilos Nosotros ----------*/
+
+.sobre_mi__contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sobre_mi__imagen {
+  width: 13.5%;
+}
+
+.sobre_mi__texto {
+  padding: 1.9rem 3rem;
+  background-color: var(--black-dark);
+  border-radius: 1rem;
+}
+
+.sobre_mi__paragraph {
+  margin-bottom: 0.5rem;
+}
+
+.proyecto__contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proyecto__texto {
+  width: 75%;
+}
+
+.proyecto__imagen {
+  width: 19%;
+}
+
+.tecnologias__contenedor {
+  margin-bottom: 3rem;
+  --padding-contenedor: 0rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body-tecnologia {
+  padding: 1rem;
+  background-color: var(--black-dark);
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--white);
+}
+
+/*----------- Te Recomendamos ----------*/
+
+.recomendada__contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recomendada__texto {
+  width: 50%;
+}
+
+.recomendada__paragraph {
+  margin-bottom: 1.5rem;
+}
+
+.recomendada__premios__texto {
+  width: 30%;
 }

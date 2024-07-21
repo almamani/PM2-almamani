@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- El siguiente es el link de Boostrap como ya estaban definidos los estilos del index, los utilicé en las web estáticas
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
+    -->
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/styles.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <title>ANDY :: Movie Center</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <header class="header">
-      <nav class="menu">
-        <section class="menu__container container">
-          <figure class="menu__logo">
-            <img src="./assets/logo_mein.jpg" class="imagen" />
-          </figure>
+  <title>ANDY :: Movie Center</title>
+</head>
 
-          <ul class="menu__links">
-            <li class="menu__item">
-              <a href="#" class="menu__link">Principal</a>
-            </li>
-            <li class="menu__item">
-              <a href="pages/nosotros.html" class="menu__link">Nosotros</a>
-            </li>
-            <li class="menu__item">
-              <a href="pages/promociones.html" class="menu__link"
-                >Promociones</a
-              >
-            </li>
-          </ul>
-        </section>
-      </nav>
-      <section class="cabecera">
-        <div class="cabecera__container container">
-          <h1 class="cabecera_title">PRÓXIMOS ESTRENOS</h1>
-        </div>
+<body>
+  <header class="header">
+    <nav class="menu">
+      <section class="menu__contenedor contenedor">
+        <figure class="menu__logo">
+          <img src="./assets/logo_mein.jpg" class="imagen" />
+        </figure>
+
+        <ul class="menu__links">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Principal</a>
+          </li>
+          <li class="menu__item">
+            <a href="./pages/nosotros.html" class="menu__link">Nosotros</a>
+          </li>
+          <li class="menu__item">
+            <a href="./pages/recomendaciones.html" class="menu__link">Te Recomendamos</a>
+          </li>
+        </ul>
       </section>
-    </header>
-    <main>
-      <section id="container__error"></section>
-      <section id="peliculas__container" class="container"></section>
-    </main>
-    <script src="scripts/tempData.js"></script>
-    <script src="scripts/index.js"></script>
-  </body>
+    </nav>
+    <section class="cabecera">
+      <div class="cabecera__contenedor contenedor">
+        <h1 class="cabecera_title">NUESTRO CATÁLOGO</h1>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="peliculas__contenedor" class="contenedor"></section>
+  </main>
+  <script src="./scripts/tempData.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+
 </html>

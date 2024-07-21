@@ -1,5 +1,5 @@
 const crateCard = (film) => {
-  const { poster, title, year, genre, director, duration, rate } = film;
+  const { poster, title, year, genre, director, duration } = film;
   const cardPoster = document.createElement("img");
   const cardTitle = document.createElement("h3");
   const cardSubtitle = document.createElement("p");
@@ -33,18 +33,18 @@ const crateCard = (film) => {
 };
 
 const showAllCards = (data) => {
-  const cardContainer = document.getElementById("peliculas__container");
-  cardContainer.innerHTML = "";
+  const cardContainer = document.getElementById("peliculas__contenedor");
   const cardsFilms = data.map((film) => crateCard(film));
   cardsFilms.forEach((film) => cardContainer.appendChild(film));
 };
 
-$.get("https://students-api.up.railway.app/movies", (data) => {
-  showAllCards(data);
-}).fail((jqXHR, textStatus, errorThrown) => {
-  console.log(`Error: ${jqXHR.status}`);
-  const error = document.createElement("h2");
-  error.innerHTML = "Listado de Peliculas Inaccesible Momentáneamente";
-  const errorContainer = document.getElementById("container__error");
-  errorContainer.appendChild(error);
-});
+$.get("https://students-api.up.railway.app/movies")
+  .done((results) => {
+    showAllCards(results);
+  })
+  .fail(() => {
+    alert(
+      "No podemos acceder al listado de películas actualizado, por el momento generaremos uno provisorio"
+    );
+    showAllCards(tempData);
+  });
