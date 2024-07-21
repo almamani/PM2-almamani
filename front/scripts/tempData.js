@@ -60,3 +60,5 @@ const tempData = [
       "https://pics.filmaffinity.com/El_hijo_de_la_novia-971118410-large.jpg",
   },
 ];
+
+module.exports = tempData;
