@@ -4,9 +4,7 @@ const axios = require("axios");
 
 const fetchMovies = async () => {
   try {
-    const results = await axios.get(
-      "https://students-api.up.railway.app/movies"
-    );
+    const results = await axios.get("http://localhost:3000/movies");
     showAllCards(results.data);
   } catch (error) {
     alert(
