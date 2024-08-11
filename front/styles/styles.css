@@ -93,6 +93,10 @@ body {
   background-position: center;
 }
 
+.cabecera__principal {
+  background-image: url("./assets/fondo_header.jpg");
+}
+
 .cabecera__contenedor {
   margin-bottom: 2rem;
   height: 1rem;
