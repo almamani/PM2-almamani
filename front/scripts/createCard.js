@@ -1,5 +1,5 @@
 const createCard = (film) => {
-  const { poster, title, year, genre, director, duration } = film;
+  const { poster, title, genre, director, duration } = film;
   const cardPoster = document.createElement("img");
   const cardTitle = document.createElement("h3");
   const cardSubtitle = document.createElement("p");
@@ -8,8 +8,10 @@ const createCard = (film) => {
   const cardDuration = document.createElement("p");
 
   cardPoster.src = poster;
+  cardPoster.alt = title;
   cardTitle.innerHTML = title;
-  cardSubtitle.innerHTML = `<span class="highlight__sky">${genre}</span> `;
+  const formattedGenres = genre.join(", ");
+  cardSubtitle.innerHTML = `<span class="highlight__sky">${formattedGenres}</span> `;
   cardDirector.innerHTML = `<b>Director:</b> ${director}`;
   cardDuration.innerHTML = `<b>Duración:</b> ${duration}`;
 

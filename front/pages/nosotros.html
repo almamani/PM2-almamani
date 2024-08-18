@@ -1,244 +1,359 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/front/assets/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/front/assets/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>ANDY :: Movie Center</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../styles/reset.css" />
-  <link rel="stylesheet" href="../styles/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <title>ANDY :: Movie Center</title>
-</head>
+  <body>
+    <header class="header">
+      <nav class="menu">
+        <section class="menu__contenedor contenedor">
+          <figure class="menu__logo">
+            <img
+              src="../assets/logo_mein.svg"
+              class="imagen"
+              alt="Imagen Logo"
+            />
+          </figure>
 
-<body>
-  <header class="header">
-    <nav class="menu">
-      <section class="menu__contenedor contenedor">
-        <figure class="menu__logo">
-          <img src="../assets/logo_mein.jpg" class="imagen" />
-        </figure>
-
-        <ul class="menu__links">
-          <li class="menu__item">
-            <a href="../index.html" class="menu__link">Principal</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Nosotros</a>
-          </li>
-          <li class="menu__item">
-            <a href="../pages/recomendaciones.html" class="menu__link">Te Recomendamos</a>
-          </li>
-        </ul>
+          <ul class="menu__links">
+            <li class="menu__item">
+              <a href="../index.html" class="menu__link">Principal</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Nosotros</a>
+            </li>
+            <li class="menu__item">
+              <a href="../pages/recomendaciones.html" class="menu__link"
+                >Te Recomendamos</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="./createMovie.html" class="menu__link">Crear Película</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+      <section class="cabecera">
+        <div class="cabecera__contenedor contenedor">
+          <h1 class="cabecera_title">NOSOTROS</h1>
+        </div>
       </section>
-    </nav>
-    <section class="cabecera">
-      <div class="cabecera__contenedor contenedor">
-        <h1 class="cabecera_title">NOSOTROS</h1>
-      </div>
-    </section>
-  </header>
-  <main>
-    <section class="sobre_mi contenedor">
-      <div class="area__title">
-        <h2 class="area__title__text text-center">Sobre Mi</h2>
-        <figure class="area__title__picture mx-auto">
-          <img src="../assets/linea_subrayado.png" class="imagen" />
-        </figure>
-      </div>
-      <div class="sobre_mi__contenedor">
-        <figure class="sobre_mi__imagen">
-          <img src="../assets/img_programadora.png" class="imagen" />
-        </figure>
-        <div class="sobre_mi__texto">
-          <p class="sobre_mi__paragraph">
-            Me llamo Andrea Mamaní, soy de San Salvador de Jujuy, Jujuy, Argentina
-            y me apasiona el Desarrollo y Programación Web.
-          </p>
-          <p class="sobre_mi__paragraph">
-            Me recibí de Analista en Sistemas en la UTN Facultad Regional Córdoba.
-          </p>
-          <p class="sobre_mi__paragraph">
-            Estoy cursando actualmente en Soy Henry la carrera Full Stack y me
-            interesa especializarme en desarrollo Front End.
-          </p>
-          <p class="sobre_mi__paragraph">
-            Actualmente trabajo en Administración y en Desarrollo Web de manera
-            Freelance.
-          </p>
+    </header>
+    <main>
+      <section class="sobre_mi contenedor">
+        <div class="area__title">
+          <h2 class="area__title__text text-center">Sobre Mi</h2>
+          <figure class="area__title__picture mx-auto">
+            <img
+              src="../assets/linea_subrayado.png"
+              class="imagen"
+              alt="Imagen Subrayado"
+            />
+          </figure>
         </div>
-      </div>
-    </section>
-    <section class="proyecto contenedor">
-      <div class="area__title">
-        <h2 class="area__title__text text-center">Sobre el Proyecto</h2>
-        <figure class="area__title__picture  mx-auto">
-          <img src="../assets/linea_subrayado.png" class="imagen" />
-        </figure>
-      </div>
-      <div class="proyecto__contenedor">
-        <div class="proyecto__texto">
-          <div class="accordion " id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  # Descripción General
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show bg-dark text-white"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  El proyecto consiste en una Web con temática de Cine. Cuenta con tres secciones: Principal, Nosotros y
-                  Te Recomendamos. Utilizamos las tecnologías necesarias para plasmar un listado de películas obtenidas
-                  de una Base de Datos, y un Formulario para cargar dichas películas.
-                  Online.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item ">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  # Principal
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse bg-dark text-white"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Permite el acceso a Nuestros Estrenos, muestra una serie de películas a fin de que el cliente pueda
-                  seleccionar la película que quiera visualizar. Estas Películas se obtienen de una Base de Datos, si no
-                  se puede acceder al servidor que las contiene, se muestra una versión local.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  # Nosotros
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse bg-dark text-white"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Incluimos un resúmen de la información referida a la diseñadora de la web a cargo del sitio,
-                  detallamos lo más importante del proyecto, describiendo de que trata cada sección. Finalmente listamos
-                  las tecnologías utilizadas y la aplicación que efectuamos de cada una.
-
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                  # Te Recomendamos
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse bg-dark text-white"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-
-                  Esta sección se modificará cada semana con los detalles de la película recomendada, incluirá el motivo
-                  de dicha recomendación, además del trailer e información relacionada a la película que se destacó.
-
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  # Formulario
-                </button>
-              </h2>
-              <div id="collapseFive" class="accordion-collapse collapse bg-dark text-white"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  El Formulario contará con los campos (Title, Year, Director, Duration, Genre, Rate, Poster) que
-                  permiten la carga de Películas en la Base de Datos.
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <figure class="proyecto__imagen">
-          <img src="../assets/poster_andy.png" class="imagen" />
-        </figure>
-      </div>
-    </section>
-    <section class="tecnologias">
-      <div class="area__subtitle contenedor">
-        <h3 class="area__subtitle__text">Tecnologías</h3>
-        <figure class="area__subtitle__picture">
-          <img src="../assets/linea_subrayado_mediun.png" class="imagen" />
-        </figure>
-      </div>
-      <section class="tecnologias__contenedor contenedor">
-        <div class="card" style="width: 12rem; border: 1px solid #141516;">
-          <img src="../assets/logo_html.png" class="card-img-top" alt="..." style="width: 12rem;">
-          <div class="card-body-tecnologia">
-            <p class="card-text">Permite el maquetado de cada una de las páginas del Sitio Web, y el linkeado que
-              permite pasar de sección en sección.
+        <div class="sobre_mi__contenedor">
+          <figure class="sobre_mi__imagen">
+            <img
+              src="../assets/img_programadora.png"
+              class="imagen"
+              alt="Imagen Programadora"
+            />
+          </figure>
+          <div class="sobre_mi__texto">
+            <p class="sobre_mi__paragraph">
+              Me llamo Andrea Mamaní, soy de San Salvador de Jujuy, Jujuy,
+              Argentina y me apasiona el Desarrollo y Programación Web.
             </p>
-          </div>
-        </div>
-        <div class="card" style="width: 12rem; border: 1px solid #141516;">
-          <img src="../assets/logo_css.png" class="card-img-top" alt="..." style="width: 12rem;">
-          <div class="card-body-tecnologia">
-            <p class="card-text">A través de CSS definimos estilos propios con lo que pudimos asignar colores
-              personalizados y el formato diseñado.
+            <p class="sobre_mi__paragraph">
+              Me recibí de Analista en Sistemas en la UTN Facultad Regional
+              Córdoba.
             </p>
-          </div>
-        </div>
-        <div class="card" style="width: 12rem; border: 1px solid #141516;">
-          <img src="../assets/logo_js.png" class="card-img-top" alt="..." style="width: 12rem;">
-          <div class="card-body-tecnologia">
-            <p class="card-text">Define el comportamiento, las acciones que se realizan al
-              cargar el sitio y luego de la interacción con el usuario.
+            <p class="sobre_mi__paragraph">
+              Estoy cursando actualmente en Soy Henry la carrera Full Stack y me
+              interesa especializarme en desarrollo Front End.
             </p>
-          </div>
-        </div>
-        <div class="card" style="width: 12rem; border: 1px solid #141516;">
-          <img src="../assets/logo_boostrap.png" class="card-img-top" alt="..." style="width: 12rem;">
-          <div class="card-body-tecnologia">
-            <p class="card-text">Framework del que tomamos componenetes como el acordeon y el
-              carrusel, y algunos aspectos de formato
-            </p>
-          </div>
-        </div>
-        <div class="card" style="width: 12rem; border: 1px solid #141516;">
-          <img src="../assets/logo_node.png" class="card-img-top" alt="..." style="width: 12rem;">
-          <div class="card-body-tecnologia">
-            <p class="card-text">Permite ejecutar Javascript del lado del servidor para poder definir el backend del
-              Sitio y el trabajo con los datos.
-            </p>
-          </div>
-        </div>
-        <div class="card" style="width: 12rem; border: 1px solid #141516;">
-          <img src="../assets/logo_mongoDB.png" class="card-img-top" alt="..." style="width: 12rem;">
-          <div class="card-body-tecnologia">
-            <p class="card-text">Mongo DB es el motor de base de datos que utilizamos para la carga de la información de
-              las películas utilizando un formulario.
+            <p class="sobre_mi__paragraph">
+              Actualmente trabajo en Administración y en Desarrollo Web de
+              manera Freelance.
             </p>
           </div>
         </div>
       </section>
-
-    </section>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-
+      <section class="proyecto contenedor">
+        <div class="area__title">
+          <h2 class="area__title__text text-center">Sobre el Proyecto</h2>
+          <figure class="area__title__picture mx-auto">
+            <img
+              src="../assets/linea_subrayado.png"
+              class="imagen"
+              alt="Imagen Subrayado"
+            />
+          </figure>
+        </div>
+        <div class="proyecto__contenedor">
+          <div class="proyecto__texto">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-dark text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    # Descripción General
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show bg-dark text-white"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    El proyecto consiste en una Web con temática de Cine. Cuenta
+                    con tres secciones: Principal, Nosotros, Te Recomendamos y
+                    Crear Película. Utilizamos las tecnologías necesarias para
+                    plasmar un listado de películas obtenidas de una Base de
+                    Datos, y un Formulario para cargar dichas películas.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-dark text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    # Principal
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse bg-dark text-white"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Permite el acceso a Nuestro Catálogo, muestra una serie de
+                    películas a fin de que el cliente pueda seleccionar la
+                    película que quiera visualizar. Estas Películas se obtienen
+                    de una Base de Datos, si no se puede acceder al servidor que
+                    las contiene, se muestra una versión local.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-dark text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    # Nosotros
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse bg-dark text-white"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Incluimos un resúmen de la información referida a la
+                    diseñadora de la web a cargo del sitio, detallamos lo más
+                    importante del proyecto, describiendo de que trata cada
+                    sección. Finalmente listamos las tecnologías utilizadas y la
+                    aplicación que efectuamos de cada una.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-dark text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="true"
+                    aria-controls="collapseFour"
+                  >
+                    # Te Recomendamos
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse bg-dark text-white"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Esta sección se modificará cada semana con los detalles de
+                    la película recomendada, incluirá el motivo de dicha
+                    recomendación, además del trailer e información relacionada
+                    a la película que se destacó.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-dark text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    # Crear Película
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse bg-dark text-white"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Consiste en un formulario que contará con los campos (Title,
+                    Year, Director, Duration, Genre, Rate, Poster) que permite
+                    la carga de Películas en la Base de Datos.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figure class="proyecto__imagen">
+            <img
+              src="../assets/poster_andy.png"
+              class="imagen"
+              alt="Imagen Andy Movie Center"
+            />
+          </figure>
+        </div>
+      </section>
+      <section class="tecnologias">
+        <div class="area__subtitle contenedor">
+          <h3 class="subtitle__text">Tecnologías</h3>
+        </div>
+        <section class="tecnologias__contenedor contenedor">
+          <div class="card">
+            <img
+              src="../assets/logo_html.png"
+              class="card-img-top"
+              alt="Imagen HTML"
+            />
+            <div class="card-body-tecnologia">
+              <p class="card-text">
+                Permite el maquetado de cada una de las páginas del Sitio Web, y
+                el linkeado que permite pasar de sección en sección.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../assets/logo_css.png"
+              class="card-img-top"
+              alt="Imagen CSS"
+            />
+            <div class="card-body-tecnologia">
+              <p class="card-text">
+                A través de CSS definimos estilos propios con lo que pudimos
+                asignar colores personalizados y el formato diseñado.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../assets/logo_js.png"
+              class="card-img-top"
+              alt="Imagen Javascript"
+            />
+            <div class="card-body-tecnologia">
+              <p class="card-text">
+                Define el comportamiento, las acciones que se realizan al cargar
+                el sitio y luego de la interacción con el usuario.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../assets/logo_boostrap.png"
+              class="card-img-top"
+              alt="Imagen Boostrap"
+            />
+            <div class="card-body-tecnologia">
+              <p class="card-text">
+                Framework del que tomamos componenetes como el acordeon y el
+                carrusel, y algunos aspectos de formato
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../assets/logo_node.png"
+              class="card-img-top"
+              alt="Imagen Node.js"
+              Mongo
+              DB
+            />
+            <div class="card-body-tecnologia">
+              <p class="card-text">
+                Permite ejecutar Javascript del lado del servidor para poder
+                definir el backend del Sitio y el trabajo con los datos.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../assets/logo_mongoDB.png"
+              class="card-img-top"
+              alt="Mongo DB"
+            />
+            <div class="card-body-tecnologia">
+              <p class="card-text">
+                Mongo DB nos permite manipular la Base de Datos para la carga y
+                consulta de la información de las películas.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer class="footer">
+        <div class="footer__contenedor">
+          <img src="../assets/logo_mein2.svg" alt="Logo Main" />
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

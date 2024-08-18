@@ -10,6 +10,7 @@
   --black-dark: #141516;
   --black-light: #303536;
   --gray: #424243;
+  --gray-light: #888;
   --white: #f1f3eb;
 
   --padding-contenedor: 2.5rem 0;
@@ -21,12 +22,23 @@ body {
   color: var(--white);
 }
 
+.body__img {
+  background-image: url("../assets/fondo_body.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .contenedor {
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
   padding: var(--padding-contenedor);
   overflow: hidden;
+}
+
+.subtitle__text {
+  font-size: 2rem;
 }
 
 .highlight {
@@ -93,10 +105,6 @@ body {
   background-position: center;
 }
 
-.cabecera__principal {
-  background-image: url("./assets/fondo_header.jpg");
-}
-
 .cabecera__contenedor {
   margin-bottom: 2rem;
   height: 1rem;
@@ -108,7 +116,7 @@ body {
 .cabecera_title {
   font-family: var(--kanit);
   color: var(--white);
-  font-size: 2.8rem;
+  font-size: 3.2rem;
 }
 
 .area__title {
@@ -137,14 +145,34 @@ body {
   width: 8%;
 }
 
+.footer {
+  background-color: var(--black-dark);
+  width: 100%;
+  height: 2.8rem;
+}
+
+.footer__index {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer__contenedor {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*----------- Estilos Index ----------*/
 
 #peliculas__contenedor {
   --padding-contenedor: 0rem 0;
+  padding-bottom: 3rem;
   width: auto;
   font-size: 1.3rem;
   display: grid;
-  grid-template-columns: repeat(3, 22%);
+  grid-template-columns: repeat(4, 20%);
   justify-content: space-between;
   align-content: center;
   row-gap: 4rem;
@@ -152,13 +180,18 @@ body {
 
 .peliculas__card {
   width: 100%;
-  height: 30.5rem;
-  padding: 1.2rem;
+  height: 29rem;
+  padding: 0.5rem;
   border-radius: 0.8rem;
   background-color: var(--black-dark);
   font-size: 1.2rem;
   color: var(--white);
   text-align: center;
+}
+
+.peliculas__card:hover {
+  border: 2px solid var(--green);
+  cursor: pointer;
 }
 
 .peliculas__card__img {
@@ -172,6 +205,7 @@ body {
 }
 
 .peliculas__card__title {
+  margin-top: 0.8rem;
   font-family: var(--kanit);
   font-size: 1.1rem;
   color: var(--green);
@@ -238,6 +272,15 @@ body {
   color: var(--white);
 }
 
+.card {
+  width: 12rem;
+  border: 1px solid var(--black-dark);
+}
+
+.card-img-top {
+  width: 12rem;
+}
+
 /*----------- Te Recomendamos ----------*/
 
 .recomendada__contenedor {
@@ -254,6 +297,64 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.recomendada__premios__texto {
-  width: 30%;
+#carouselExampleCaptions {
+  margin: auto;
+  width: 75%;
+}
+
+/*----------- Crear Película ----------*/
+.contenedor__form {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: var(--black-dark);
+  border: 1px solid var(--gray);
+  width: 60%;
+}
+
+.form-label {
+  color: var(--sky-blue);
+  font-weight: bold;
+}
+
+.form-control,
+.form-check-input {
+  background-color: var(--black-light);
+  border: var(--black-light);
+  color: var(--white);
+}
+
+.form-select {
+  background-color: var(--black-light);
+  border: var(--black-light);
+  color: var(--gray-light);
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--black-light);
+  color: var(--white);
+}
+
+.form-control::placeholder {
+  color: var(--gray-light);
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+#title {
+  width: 650px;
+}
+
+#director {
+  width: 350px;
+}
+#duration,
+#rate {
+  width: 130px;
+}
+
+#year {
+  width: 125px;
 }
