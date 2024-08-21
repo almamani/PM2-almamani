@@ -7,7 +7,7 @@ module.exports = {
       res.status(200).json(movies);
     } catch (error) {
       res
-        .status(500)
+        .status(400)
         .json({ error: "Error interno del servidor de Peliculas" });
     }
   },
@@ -29,7 +29,7 @@ module.exports = {
         data: newMovie,
       });
     } catch (error) {
-      res.status(500).json({ error: "Error al crear la película" });
+      res.status(400).json({ error: "Error al crear la película" });
     }
   },
 };

@@ -1,9 +1,4 @@
 const axios = require("axios");
-const { loadSelectYears } = require("../scripts/loadSelectYears");
-const formMovie = document.getElementById("formMovie");
-
-//Carga Select Años
-loadSelectYears();
 
 const handlerAddMovie = async (e) => {
   e.preventDefault();
@@ -79,4 +74,29 @@ const handlerAddMovie = async (e) => {
   formMovie.reset();
 };
 
-formMovie.addEventListener("submit", handlerAddMovie);
+const handlerResetForm = (e) => {
+  e.preventDefault();
+  const titleMovie = document.getElementById("title");
+  const yearMovie = document.getElementById("year");
+  const directorMovie = document.getElementById("director");
+  const durationMovie = document.getElementById("duration");
+  const rateMovie = document.getElementById("rate");
+  const posterMovie = document.getElementById("poster");
+
+  titleMovie.value = "";
+  yearMovie.value = "Seleccione";
+  directorMovie.value = "";
+  durationMovie.value = "";
+  rateMovie.value = "";
+  posterMovie.value = "";
+
+  const checkboxes = document.querySelectorAll(".form-check-input");
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = false;
+  });
+};
+
+module.exports = {
+  handlerAddMovie,
+  handlerResetForm,
+};

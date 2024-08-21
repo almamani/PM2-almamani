@@ -1,5 +1,7 @@
 const tempData = require("./tempData");
 const showAllCards = require("./showAllCards");
+const { loadSelectYears } = require("./loadSelectYears");
+const { handlerAddMovie, handlerResetForm } = require("./createMovie");
 const axios = require("axios");
 
 const fetchMovies = async () => {
@@ -14,4 +16,18 @@ const fetchMovies = async () => {
   }
 };
 
-fetchMovies();
+document.addEventListener("DOMContentLoaded", () => {
+  const path = window.location.pathname;
+
+  if (path === "/index.html" || path === "/") {
+    fetchMovies();
+  } else if (path === "/pages/createMovie.html") {
+    loadSelectYears();
+    const formMovie = document.getElementById("formMovie");
+
+    if (formMovie) {
+      formMovie.addEventListener("submit", handlerAddMovie);
+      formMovie.addEventListener("reset", handlerResetForm);
+    }
+  }
+});
