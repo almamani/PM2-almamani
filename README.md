@@ -1,4 +1,4 @@
-> # Movie Center - PM2-almamani
+> ![logo Cinema](./front/public/logo_cinema.png)
 
 > ### Descripción del Proyecto:
 
